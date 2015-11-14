@@ -5,14 +5,15 @@ namespace DAL.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<SocialNetContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<DAL.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-        }       
+            ContextKey = "DAL.ApplicationDbContext";
+        }
 
-        protected override void Seed(SocialNetContext context)
+        protected override void Seed(DAL.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

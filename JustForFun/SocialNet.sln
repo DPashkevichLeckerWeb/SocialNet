@@ -10,6 +10,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{BCDACA3C-7859-464B-B169-0CD500DE15B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{E3C54C44-E53E-4034-885D-DD4EB8162380}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BCDACA3C-7859-464B-B169-0CD500DE15B4} = {BCDACA3C-7859-464B-B169-0CD500DE15B4}
+		{0BA4585B-A48A-489E-A82C-C921B163215F} = {0BA4585B-A48A-489E-A82C-C921B163215F}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
