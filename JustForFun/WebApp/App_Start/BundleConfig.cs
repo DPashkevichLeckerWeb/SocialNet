@@ -25,7 +25,21 @@ namespace WebApp
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/bower_components/ngAnimate/css/ng-animation.css",
+                      "~/bower_components/angular-loading-bar/src/loading-bar.css"
+                      ));
+
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                    "~/bower_components/angular/angular.js",
+                    "~/bower_components/ngAnimate/js/angular.min.js",
+                    "~/bower_components/angular-loading-bar/src/loading-bar.js"
+                ));
+
+            bundles.Add(new ScriptBundle("~/bundles/app").Include(
+                    "~/Scripts/App/app.js",
+                    "~/Scripts/App/Controllers/userController.js"
+                ));
         }
     }
 }
