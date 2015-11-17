@@ -15,5 +15,12 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "ui-router-extras": "~0.1.0",
+    "angular-ui-router": "~0.2.15",
+    "angular": "~1.4.7",
+    "angular-loading-bar": "~0.8.0",
+    "ngAnimate": "*"
+  }
 }

@@ -33,7 +33,9 @@ namespace WebApp
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                     "~/bower_components/angular/angular.js",
                     "~/bower_components/ngAnimate/js/angular.min.js",
-                    "~/bower_components/angular-loading-bar/src/loading-bar.js"
+                    "~/bower_components/angular-loading-bar/src/loading-bar.js",
+                    "~/bower_components/angular-ui-router/release/angular-ui-router.js",
+                    "~/bower_components/ui-router-extras/release/ct-ui-router-extras.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
