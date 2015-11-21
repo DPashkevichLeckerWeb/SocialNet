@@ -8,6 +8,7 @@ var app = angular.module('app-module', [
      'angular-loading-bar',
      'ct.ui.router.extras',
      'ngMaterial',
+     //'ngAnimate'
      //'LocalStorageModule',
      //'ui.bootstrap.tooltip',
      //'ui'

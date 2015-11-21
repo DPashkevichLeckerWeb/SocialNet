@@ -46,7 +46,8 @@ namespace WebApp
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                     "~/Scripts/App/app.js",
-                    "~/Scripts/App/Controllers/userController.js"
+                    "~/Scripts/App/Controllers/userController.js",
+                    "~/Scripts/App/Controllers/menuAnimationController.js"
                 ));
         }
     }
