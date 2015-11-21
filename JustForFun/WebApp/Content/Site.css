@@ -1,6 +1,31 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+}
+
+.menuMock.closed {
+    display: none;
+}
+
+.menuMock.opened {
+    width: 1px;
+    float: left;
+}
+
+.menu.closed {
+    display: none;
+}
+
+.menu.opened {
+    transition: 1s;
+}
+
+.menu-bar {
+    background: -moz-linear-gradient(top,  rgba(50,201,0,0.77) 0%, rgba(180,227,145,0.89) 50%, rgba(50,201,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(50,201,0,0.77) 0%,rgba(180,227,145,0.89) 50%,rgba(50,201,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(50,201,0,0.77) 0%,rgba(180,227,145,0.89) 50%,rgba(50,201,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c432c900', endColorstr='#32c900',GradientType=0 ); /* IE6-9 */
+
+    box-shadow: 0px 0px 12px 10px #587455 inset;
+
 }
 
 /* Set padding to keep content from hitting the edges */
