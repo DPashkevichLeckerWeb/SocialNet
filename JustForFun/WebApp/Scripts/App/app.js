@@ -7,6 +7,7 @@ var app = angular.module('app-module', [
      'ui.router',
      'angular-loading-bar',
      'ct.ui.router.extras',
+     'ngMaterial',
      //'LocalStorageModule',
      //'ui.bootstrap.tooltip',
      //'ui'

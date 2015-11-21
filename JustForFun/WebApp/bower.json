@@ -21,6 +21,8 @@
     "angular-ui-router": "~0.2.15",
     "angular": "~1.4.7",
     "angular-loading-bar": "~0.8.0",
-    "ngAnimate": "*"
+    "ngAnimate": "*",
+    "angular-material": "~0.11.4",
+    "ngToast": "ngtoast#~1.5.6"
   }
 }

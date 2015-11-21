@@ -26,16 +26,22 @@ namespace WebApp
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",
-                      "~/bower_components/ngAnimate/css/ng-animation.css",
-                      "~/bower_components/angular-loading-bar/src/loading-bar.css"
+                      "~/bower_components/ngToast/dist/ngToast.css",
+                      "~/bower_components/ngToast/dist/ngToast-animations.css",
+                      "~/bower_components/angular-loading-bar/src/loading-bar.css",
+                      "~/bower_components/angular-material/angular-material.css"
                       ));
 
             bundles.Add(new ScriptBundle("~/bundles/angular").Include(
                     "~/bower_components/angular/angular.js",
-                    "~/bower_components/ngAnimate/js/angular.min.js",
+                    "~/bower_components/angular-aria/angular-aria.js",
+                    "~/bower_components/angular-animate/angular-animate.js",
+                    "~/bower_components/angular-sanitize/angular-sanitize.js",
+                    "~/bower_components/ngToast/dist/ngToast.js",
+                    "~/bower_components/angular-material/angular-material.js",
                     "~/bower_components/angular-loading-bar/src/loading-bar.js",
                     "~/bower_components/angular-ui-router/release/angular-ui-router.js",
-                    "~/bower_components/ui-router-extras/release/ct-ui-router-extras.js"
+                    "~/bower_components/ui-router-extras/release/ct-ui-router-extras.js"                    
                 ));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
