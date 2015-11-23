@@ -12,14 +12,14 @@
         <div class="menu-bar col-md-2" ng-mouseenter="openMenu()" ng-mouseleave="closeMenu()">            
             <div class="menu-content">
                 <h2 style="margin-left: 5%; margin-top: 3%;">Fast Meets</h2>
-                <div class="menu-link" style="height:40px;">
-                    <a ui-sref="login">login</a>
+                <div class="menu-link" ui-sref="login">
+                    Login
                 </div>
-                <div class="menu-link" style="height:40px;">
-                    <a ui-sref="value">value</a>
+                <div class="menu-link" ui-sref="value">
+                    Some Text
                 </div>
-                <div class="menu-link" style="height:40px;">
-                    <a ui-sref="index">index</a>
+                <div class="menu-link" ui-sref="index">
+                    Index
                 </div>
             </div>
             <div id="pin-key"><span ng-click="togglePinMenuBar()" class="pull-right glyphicon glyphicon-pushpin clickable" ng-class="pinned"></span></div>

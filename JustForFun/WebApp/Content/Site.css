@@ -42,8 +42,11 @@
 }
 
 .menu-link {
+    height:40px;
+    cursor: pointer;
     background: transparent;
     transition: 0.7s;
+    padding-left: 10%;
 }
 
 .menu-link:hover {
