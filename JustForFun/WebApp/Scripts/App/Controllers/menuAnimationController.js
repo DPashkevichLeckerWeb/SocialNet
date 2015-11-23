@@ -1,18 +1,20 @@
 ﻿'use strict';
 
 app.controller('menuAnimationController', ['$scope', function ($scope) {
-    $scope.menuClass = "menu closed";
-    $scope.contentClass = "col-md-10";
-    $scope.menuMockClass = "menuMock opened";
+    $scope.moveContent = "content moved";
+    $scope.allowMove = true;
 
     $scope.openMenu = function () {
-        $scope.menuClass = "menu opened col-md-2";
-        $scope.menuMockClass = "menuMock closed";
+        $scope.moveContent = "content";
     }
     
     $scope.closeMenu = function () {
-        $scope.menuClass = "menu closed";
-        $scope.menuMockClass = "menuMock opened";
+        if ($scope.allowMove)
+            $scope.moveContent = "content moved";
+    }
+
+    $scope.togglePinMenuBar = function () {
+        $scope.allowMove = !$scope.allowMove;
     }
     
 }]);

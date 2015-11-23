@@ -8,13 +8,24 @@
 }
 
 <div ng-app="app-module" ng-controller="menuAnimationController">
-    <div ng-class="menuMockClass" style="height:100vh" ng-mouseenter="openMenu()"></div>
-    <div ng-class="menuClass" class="menu-bar" style="height: 100vh" ng-mouseleave="closeMenu()"></div>
-    <div ng-class="contentClass">
-        <div data-ui-view></div>
-        <a ui-sref="login">login</a>
-        <a ui-sref="value">value</a>
-        <a ui-sref="index">index</a>
+    <div ng-class="moveContent">
+        <div class="menu-bar col-md-2" ng-mouseenter="openMenu()" ng-mouseleave="closeMenu()">            
+            <div class="menu-content">
+                <h2 style="margin-left: 5%; margin-top: 3%;">Fast Meets</h2>
+                <div class="menu-link" style="height:40px;">
+                    <a ui-sref="login">login</a>
+                </div>
+                <div class="menu-link" style="height:40px;">
+                    <a ui-sref="value">value</a>
+                </div>
+                <div class="menu-link" style="height:40px;">
+                    <a ui-sref="index">index</a>
+                </div>
+            </div>
+            <div id="pin-key"><span ng-click="togglePinMenuBar()" class="pull-right glyphicon glyphicon-pushpin clickable" ng-class="pinned"></span></div>
+        </div>
+        <div class="col-md-10" id="pageInner">
+            <div data-ui-view></div>
+        </div>
     </div>
-
 </div>
