@@ -8,7 +8,11 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <script>
+        var isAuthenticated = "@User.Identity.IsAuthenticated" == "True";
+        var currentUser = "@User.Identity.Name";
+    </script>
+    @RenderSection("scripts", required: false)    
 </head>
 <body>
     @RenderBody()

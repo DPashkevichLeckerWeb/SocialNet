@@ -15,6 +15,14 @@ app.controller('menuAnimationController', ['$scope', function ($scope) {
 
     $scope.togglePinMenuBar = function () {
         $scope.allowMove = !$scope.allowMove;
+        if ($scope.allowMove) {
+            $scope.pinned = "";
+        }
+        else {
+            $scope.pinned = "pinned";
+        }
     }
+
+
     
 }]);

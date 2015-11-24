@@ -8,10 +8,10 @@
 }
 
 <div ng-app="app-module" ng-controller="menuAnimationController">
-    <div ng-class="moveContent">
+    <div ng-class="moveContent" ng-controller="userController">
         <div class="menu-bar col-md-2" ng-mouseenter="openMenu()" ng-mouseleave="closeMenu()">            
             <div class="menu-content">
-                <h2 style="margin-left: 5%; margin-top: 3%;">Fast Meets</h2>
+                <h2 style="margin-left: 5%; margin-top: 3%;">Fast Meets</h2>                
                 <div class="menu-link" ui-sref="login">
                     Login
                 </div>
@@ -22,7 +22,11 @@
                     Index
                 </div>
             </div>
-            <div id="pin-key"><span ng-click="togglePinMenuBar()" class="pull-right glyphicon glyphicon-pushpin clickable" ng-class="pinned"></span></div>
+            <div class="bottom-bar">
+                <span ng-if="true" ng-click="togglePinMenuBar()" class="pull-right clickable glyphicon glyphicon-pushpin" ng-class="pinned"></span>
+                <span ng-if="!isAuthenticated" class="pull-right clickable glyphicon glyphicon-log-in"></span>
+                <span ng-if="isAuthenticated" class="pull-right clickable glyphicon glyphicon-log-out"></span>
+            </div>
         </div>
         <div class="col-md-10" id="pageInner">
             <div data-ui-view></div>

@@ -57,22 +57,34 @@
 }
 
 .clickable {
+    transition: 0.6s;
     border: 2px solid transparent;
+    border-radius: 4px;
     padding: 5px;
     cursor: pointer;
 }
 
-.clickable:hover {
+.clickable:hover {    
+    transition: 0.6s;
     border: 2px solid #808080;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
-#pin-key {
+.bottom-bar {
+    border-radius: 4px;
+    transition: 0.6s;
     padding: 10px;
+    background: transparent;
 }
 
-#pin-key span {
-    box-shadow: 2px 2px 2px 2px transparent inset;
+.bottom-bar span {
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.bottom-bar .pinned {
+    transition: 0.6s;
+    background: white;
 }
 
 #pageInner {
